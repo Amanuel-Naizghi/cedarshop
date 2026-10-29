@@ -8,6 +8,7 @@ import { Trees } from "lucide-react";
 const navLinks = [
   { label: "Dashboard", href: "/portal" },
   { label: "Orders", href: "/portal/orders" },
+  { label: "New Order", href: "/portal/orders/new" },
   { label: "Deliveries", href: "/portal/deliveries" },
   { label: "Profile", href: "/portal/profile" },
 ];

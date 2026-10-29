@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 type OrderStatus = "Pending" | "In Progress" | "Delivered" | "Cancelled";
 
@@ -140,13 +141,23 @@ export default function OrdersPage() {
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-8 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">
-            My Orders
-          </h1>
-          <p className="mt-2 text-gray-600">
-            View, manage, and track your lumber orders.
-          </p>
+       
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900">
+              My Orders
+            </h1>
+            <p className="mt-2 text-gray-600">
+              View, manage, and track your lumber orders.
+            </p>
+          </div>
+
+          <Link
+            href="/portal/orders/new"
+            className="inline-flex items-center justify-center rounded-lg bg-green-700 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-green-800"
+          >
+            + New Order Request
+          </Link>
         </div>
 
         {message && (

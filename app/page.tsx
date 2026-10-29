@@ -55,7 +55,7 @@ export default function HomePage() {
               <WorkflowCard
                 title="Customer Portal"
                 role="Customer"
-                href="/portal/orders"
+                href="/portal"
                 icon={<ShoppingCart className="workflowCardIcon" />}
                 description="View order histories, track live jobsite deliveries, and view exact moisture-adjusted wood weight specs."
                 activeRole={user.role}
